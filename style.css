@@ -14,7 +14,6 @@ header {
     margin: 0 auto;
     padding: 0.5rem 2rem;
 
-    max-height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url(./images/Hero-Image.png);
@@ -112,14 +111,14 @@ main {
         min-height: 100vh;
         .about-image {
             flex-basis: 50%;
-            min-width: 400px;
+            min-width: 300px;
             flex-grow: 1;
             margin-bottom: 1rem;
         }
         .about-container{
             margin: auto 0;
             flex-basis: 45%;
-            min-width: 430px;
+            min-width: 300px;
             flex-grow: 1;
             h2 {
                 font-size: 2rem;
@@ -331,7 +330,8 @@ main {
         margin: 0rem auto;
         padding: 1.5rem 2rem;
         
-        min-height: 60vh;
+        min-height: 50vh;
+        height: 60vh;
         background-image: url(./images/cta-bg.png);
         background-size: 100vw 60vh;
         background-position: center;
@@ -507,7 +507,10 @@ footer {
 }
 @media (max-width: 575px) {
     html {
-        font-size: 50%;
+        font-size: 40%;
+    }
+    header {
+        min-height: 60vh;
     }
     .nav-bar {
         font-weight: 600;
@@ -516,6 +519,10 @@ footer {
         width: 25vw;            
     }
     .proofs {
+        flex-direction: column;
+    }
+    .call-to-action {
+        height: 50vh !important;
         flex-direction: column;
     }
     footer {
