@@ -14,6 +14,7 @@ header {
     margin: 0 auto;
     padding: 0.5rem 2rem;
 
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url(./images/Hero-Image.png);
@@ -24,7 +25,7 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
-        height: 10vh;
+        height: 10%;
         ul {
             display: flex;
             font-size: 0.9rem;
@@ -46,7 +47,8 @@ header {
     .hero-section {
         width: 50%;
         margin: auto 0;
-        padding-top: 10vh;
+        height: 90%;
+        padding-top: 10%;
         h1{
             padding: 0.25em 0;
             font-size: 4rem;
@@ -110,7 +112,7 @@ main {
         min-height: 100vh;
         .about-image {
             flex-basis: 50%;
-            min-width: 480px;
+            min-width: 400px;
             flex-grow: 1;
             margin-bottom: 1rem;
         }
@@ -121,6 +123,7 @@ main {
             flex-grow: 1;
             h2 {
                 font-size: 2rem;
+                padding-left: 2rem;
             }
             p {
                 font-size: 0.9rem;
@@ -128,6 +131,7 @@ main {
                 line-height: 1.6;
                 padding-right: 2.25rem;
                 padding-bottom: 1.25rem;
+                padding-left: 2rem;
             }
         }
     }
@@ -316,8 +320,8 @@ main {
                     display: flex;
                     gap: 10px;
                     img {
-                        width: 30px;
-                        height: 30px;
+                        width: 1.5rem;
+                        height: 1.5rem;
                     }
                 }
             }
@@ -453,7 +457,7 @@ footer {
             }
             .contacts li {
                 img {
-                    width: 20px;
+                    width: 1.1rem;
                     margin-right: 5px;
                     position: relative;
                     top: 4px;
@@ -505,5 +509,19 @@ footer {
     html {
         font-size: 50%;
     }
-
+    .nav-bar {
+        font-weight: 600;
+    }
+    .nav-logo {
+        width: 25vw;            
+    }
+    .proofs {
+        flex-direction: column;
+    }
+    footer {
+        font-size: 0.6rem;
+        .right-part ul .ul-title {
+            font-size: 0.9rem !important;
+        }
+    }
 }
